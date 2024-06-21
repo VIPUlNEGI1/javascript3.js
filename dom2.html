@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">maoday</div>
+        <div class="day">tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+</body>
+<script>
+   const parent= document.querySelector('.parent')
+   // console.log(parent)
+  //  console.log(parent.children)
+    // how to find the childern in js
+   // console.log(parent.children[1].innerHTML)
+    // how too make loop
+    for(let i=0; i<parent.children.length; i++){
+        console.log(parent.children[i].innerHTML)
+    } 
+
+    // how tho change stlying in help of js
+    parent.children[1].style.color ="orange"
+    //how to target any element
+    // console.log(parent.firstElementChild)
+    // console.log(parent.lastElementChild)
+
+    // this is  short form to select  any elements
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne)
+    //this is excess the parent element
+    console.log(dayOne.parentElement)
+    //how to excess parent sibling
+    console.log(day.nextElemetSibling)
+
+console.log("nodes:",parent.childNodes)
+</script>
+</html>
